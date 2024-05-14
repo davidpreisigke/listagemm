@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem</title>
+</head>
+
+<body>
+    <div class="container-form">
+        <form class="form-register" action="">
+            <div class="title">
+                <h1>Register Product</h1>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="product-name" class="value-label">Name Product</label>
+                    <input placeholder="Product Name" type="text" id="product-name" name="product-name" required>
+                </div>
+                <div class="input-box">
+                    <label for="product-description"  class="value-label">Description Product:</label>
+                    <input placeholder="Product Description" id="product-description" name="product-description"
+                        required></input>
+                </div>
+                <div class="input-box">
+                    <label for="product-value"  class="value-label">Value product</label>
+                    <input placeholder="Product Value" type="number" id="product-value" name="product-value" required>
+                </div>
+                <div class="input-box">
+                    <label for="product-available"  class="value-label">Available for sale</label>
+                    <select class="button" id="product-available" name="product-available">
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                    <button id="registerbutton" class="button" type="submit" onclick="produto.adicionar()">Register product</button>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="titlee">
+                    <h2>Listagem de Produtos</h2>
+                </div>
+                <div class=" row-text-center">
+
+                    <div class="text-center">
+                        <table id="tabela-produtos" class="text-center col-12">
+                            <thead>
+                                <tr class="table-itens">
+                                    <th class="itens">Nome</th>
+                                    <th class="itens">Descrição</th>
+                                    <th class="itens">Disponível para Venda</th>
+                                    <th class="itens">Valor</th>
+                                </tr>
+                            </thead>
+
+                    
+                </div>
+            </div>
+
+            <div class="addproducts">
+                <tr>
+                    <td>Produto 1</td>
+                    <td>Descrição do Produto 1</td>
+                    <td>Sim</td>
+                    <td>R$ 10,00</td>
+                </tr>
+        
+                </table>
+            </div>
+        </div>
+
+        </form>
+
+    </div>
+
+
+    </div>
+
+    </div>
+
+
+
+
+    <script src="main.js" ></script>
+    <script src="ll.js" ></script>
+</body>
+
+</html>
